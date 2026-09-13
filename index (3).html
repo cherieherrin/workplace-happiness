@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Workplace Happiness in Technology (IT) Workers: Survey Summary of Findings</title>
+<meta name="description" content="Survey summary of findings on workplace happiness in technology (IT) workers. 607 US technology workers surveyed in May 2026.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Workplace Happiness in Technology (IT) Workers: Survey Summary of Findings">
+<meta property="og:description" content="Summary of findings from a survey of 607 US technology workers. Workplace happiness predicted whether people stayed. Workplace distress predicted how work got done. The two paths never crossed.">
+<meta property="og:url" content="https://YOURNAME.github.io/workplace-happiness/">
+<meta property="og:image" content="https://YOURNAME.github.io/workplace-happiness/social-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+  :root{
+    --ink:#1C2733; --muted:#5A6672; --paper:#E8ECF0; --surface:#FFFFFF;
+    --rule:#C9D2DA; --stay:#1F6F5C; --do:#6B5B95; --bar:#B9C4D0;
+    --serif: Charter,"Bitstream Charter","Sitka Text",Georgia,"Times New Roman",serif;
+    --sans: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.55}
+  .wrap{max-width:34rem;margin:0 auto;padding:2.5rem 1.25rem 3.5rem}
+  .meta{font-size:.8125rem;color:var(--muted);margin:0 0 1.75rem;padding-bottom:1rem;border-bottom:1px solid var(--rule)}
+  h1{font-family:var(--serif);font-weight:600;font-size:clamp(1.85rem,6.2vw,2.5rem);line-height:1.14;letter-spacing:-.012em;margin:0 0 .9rem;text-wrap:balance}
+  .deck{font-family:var(--sans);font-size:1.0625rem;font-weight:700;color:var(--ink);margin:-.35rem 0 1.1rem}
+  .lede{font-size:1.1rem;color:var(--muted);margin:0 0 2.25rem}
+  p{margin:0 0 1rem}
+  h2{font-family:var(--serif);font-size:1.3rem;font-weight:600;margin:2.9rem 0 .4rem}
+  .sub{color:var(--muted);margin:0 0 1.1rem}
+
+  .panel{background:var(--surface);border:1px solid var(--rule);border-radius:3px;padding:1.5rem 1.25rem 1.25rem}
+  .lane{display:grid;gap:.5rem;padding-left:.9rem;border-left:3px solid currentColor}
+  .lane + .lane{margin-top:1.6rem}
+  .lane-stay{color:var(--stay)}
+  .lane-do{color:var(--do)}
+  .lane h3{font-family:var(--sans);font-size:.9375rem;font-weight:700;margin:0 0 .15rem;color:currentColor}
+  .chain{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;align-items:center;gap:.35rem .5rem;color:var(--ink);font-size:.9375rem}
+  .chain li{margin:0}
+  .step{display:inline-block;padding:.3rem .55rem;background:var(--paper);border-radius:2px}
+  .last .step{background:transparent;border:1px solid currentColor;color:currentColor;font-weight:600}
+  .link{color:currentColor;opacity:.55;font-size:1.05rem;line-height:1}
+  .note{margin:1.4rem 0 0;padding-top:1.1rem;border-top:1px solid var(--rule);font-size:.9375rem;color:var(--muted)}
+
+  .bars{list-style:none;margin:0;padding:0}
+  .bars li{padding:.6rem 0;border-bottom:1px solid var(--rule)}
+  .bars li:first-child{border-top:1px solid var(--rule)}
+  .bl{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;font-size:.9375rem;margin-bottom:.35rem}
+  .bv{font-variant-numeric:tabular-nums;color:var(--do);font-weight:700}
+  .track{height:7px;background:var(--paper);border-radius:4px;overflow:hidden}
+  .fill{display:block;height:100%;background:var(--do);border-radius:4px}
+  .fill-mute{background:var(--bar)}
+
+  ol.ranked{margin:0;padding:0;list-style:none;counter-reset:r}
+  ol.ranked li{counter-increment:r;display:flex;gap:.75rem;align-items:baseline;padding:.55rem 0;border-bottom:1px solid var(--rule);font-size:.9375rem}
+  ol.ranked li:first-child{border-top:1px solid var(--rule)}
+  ol.ranked li::before{content:counter(r);color:var(--muted);font-variant-numeric:tabular-nums;min-width:1rem}
+  .val{margin-left:auto;font-variant-numeric:tabular-nums;color:var(--muted)}
+
+  ul.plain{margin:0;padding:0;list-style:none}
+  ul.plain li{padding:.55rem 0;border-bottom:1px solid var(--rule)}
+  ul.plain li:first-child{border-top:1px solid var(--rule)}
+
+
+  .dist{display:flex;height:26px;border-radius:3px;overflow:hidden;margin:.2rem 0 .9rem}
+  .dist span{display:block}
+  .d1{background:#A9B6C2}.d2{background:#8FB0AA}.d3{background:#5E9A8B}.d4{background:#3A806E}.d5{background:#1F6F5C}
+  .key{list-style:none;margin:0 0 1rem;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(8.5rem,1fr));gap:.35rem .9rem;font-size:.8125rem;color:var(--muted)}
+  .key li{display:flex;align-items:center;gap:.45rem}
+  .sw{width:11px;height:11px;border-radius:2px;flex:none}
+  .big{font-family:var(--serif);font-size:2.1rem;line-height:1;margin:0 0 .2rem;color:var(--stay)}
+
+  .eff{display:grid;grid-template-columns:10.5rem 1fr 3rem;align-items:center;gap:.6rem;padding:.4rem 0;font-size:.875rem}
+  .eff .lbl{line-height:1.25}
+  .axis{position:relative;height:14px;background:var(--paper);border-radius:2px}
+  .axis::before{content:"";position:absolute;left:50%;top:-2px;bottom:-2px;width:1px;background:var(--rule)}
+  .axis i{position:absolute;top:0;height:100%;border-radius:2px}
+  .axis i.p{left:50%}
+  .axis i.n{right:50%}
+  .h .p,.h .n{background:var(--stay)}
+  .d .p,.d .n{background:var(--do)}
+  .num{text-align:right;font-variant-numeric:tabular-nums;color:var(--muted)}
+  .panelhead{font-size:.9375rem;font-weight:700;margin:1.5rem 0 .3rem}
+  .panelhead:first-of-type{margin-top:.2rem}
+  .pair{padding:.55rem 0;border-bottom:1px solid var(--rule);font-size:.875rem}
+  .pair:first-of-type{border-top:1px solid var(--rule)}
+  .pl{display:flex;justify-content:space-between;gap:1rem;margin-bottom:.3rem}
+  .pn{font-variant-numeric:tabular-nums;color:var(--muted);white-space:nowrap}
+  .prow{display:flex;align-items:center;gap:.4rem;height:9px;margin-bottom:3px}
+  .prow:last-child{margin-bottom:0}
+  .prow b{flex:none;width:3.6rem;font-weight:400;font-size:.6875rem;color:var(--muted)}
+  .prow span{display:block;height:100%;border-radius:2px}
+  .offered{background:var(--bar)}
+  .wanted{background:var(--stay)}
+  .stat{font-family:var(--serif);font-size:1.15rem;line-height:1.4;margin:0 0 1rem}
+  footer{margin-top:2.9rem;padding-top:1.25rem;border-top:1px solid var(--rule);font-size:.875rem;color:var(--muted)}
+  footer p{margin:0 0 .5rem}
+  a{color:var(--stay)}
+  a:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
+
+  @media (prefers-reduced-motion: no-preference){
+    .lane{opacity:0;transform:translateY(6px);animation:rise .5s ease-out forwards}
+    .lane-stay{animation-delay:.15s}
+    .lane-do{animation-delay:.45s}
+    @keyframes rise{to{opacity:1;transform:none}}
+  }
+</style>
+</head>
+<body>
+<main class="wrap">
+
+  <p class="meta">Research summary. September 2026. Findings from a doctoral study of workplace happiness in technology workers.</p>
+
+  <h1>Workplace Happiness in Technology Workers</h1>
+
+  <p class="deck">Summary of findings from a survey of 607 US technology workers.</p>
+
+  <p class="lede">Feeling good at work and feeling worn down do different jobs. They are not opposite ends of one scale, and they run to different outcomes.</p>
+
+  <p>Respondents were employed US technology workers recruited through Prolific in May 2026. They answered questions about their managers, their autonomy, their tools, their workload and how they felt about their work. What follows comes from a structural equation model of those responses.</p>
+
+  <section class="panel" aria-label="The two paths we found">
+    <div class="lane lane-stay">
+      <h3>One path ran to staying</h3>
+      <ul class="chain">
+        <li><span class="step">Work conditions</span></li>
+        <li class="link" aria-hidden="true">&#8594;</li>
+        <li><span class="step">Feeling good about work</span></li>
+        <li class="link" aria-hidden="true">&#8594;</li>
+        <li class="last"><span class="step">Not thinking about leaving</span></li>
+      </ul>
+    </div>
+    <div class="lane lane-do">
+      <h3>The other ran to getting work done</h3>
+      <ul class="chain">
+        <li><span class="step">Work conditions</span></li>
+        <li class="link" aria-hidden="true">&#8594;</li>
+        <li><span class="step">Feeling worn down by work</span></li>
+        <li class="link" aria-hidden="true">&#8594;</li>
+        <li class="last"><span class="step">How work actually got done</span></li>
+      </ul>
+    </div>
+    <p class="note">The two paths stayed separate. Feeling good about work was linked to whether people were thinking about leaving, and feeling worn down was linked to how work got done — but neither carried across to the other outcome. Leadership support and system feedback were the strongest predictors of the first. Toil — firefighting and technical debt crowding out real work — was the strongest predictor of the second.</p>
+  </section>
+
+  <h2>How happy were they?</h2>
+  <p class="sub">Averaged across three happiness questions, on a 1 to 7 scale.</p>
+
+  <p class="big">4.9</p>
+  <p class="sub" style="margin-bottom:1.2rem">The average across all 607 respondents. Comfortably above the midpoint, well short of glowing.</p>
+
+  <div class="dist" role="img" aria-label="Distribution of happiness scores: 10 percent at 3 or below, 14 percent between 3 and 4, 28 percent between 4 and 5, 24 percent between 5 and 6, 24 percent at 6 or above.">
+    <span class="d1" style="width:9.9%"></span><span class="d2" style="width:13.5%"></span><span class="d3" style="width:28.3%"></span><span class="d4" style="width:24.2%"></span><span class="d5" style="width:24.1%"></span>
+  </div>
+  <ul class="key">
+    <li><span class="sw d1"></span>3 or below — 10%</li>
+    <li><span class="sw d2"></span>3 to 4 — 14%</li>
+    <li><span class="sw d3"></span>4 to 5 — 28%</li>
+    <li><span class="sw d4"></span>5 to 6 — 24%</li>
+    <li><span class="sw d5"></span>6 or above — 24%</li>
+  </ul>
+
+  <p>Nearly three in five rated their working life at 5 or higher. About one in ten sat at 3 or below. Workplace distress averaged 2.7, with roughly seven in ten at 3 or lower — so for most people the picture was decent rather than dire, with a real minority for whom it wasn't.</p>
+
+  <p>Some groups reported more happiness than others. Managers averaged 5.3 and individual contributors 4.7. People sitting with their team averaged 5.1 against 4.7 for those spread across locations. These gaps were consistent but small. What explained them was not the job title or the office. The groups reporting less happiness also reported less of the specific things that drive it: less support from leaders and coworkers, and less feedback from their systems.</p>
+
+  <h2>What got in the way</h2>
+  <p class="sub">Respondents ranked five things by how much they hindered daily flow. The winners were not technical.</p>
+
+  <ul class="bars">
+    <li>
+      <div class="bl"><span>Shifting priorities</span><span class="bv">54%</span></div>
+      <div class="track"><span class="fill" style="width:54%"></span></div>
+    </li>
+    <li>
+      <div class="bl"><span>Unclear requirements</span><span class="bv">44%</span></div>
+      <div class="track"><span class="fill" style="width:43.5%"></span></div>
+    </li>
+    <li>
+      <div class="bl"><span>Excessive meetings and admin</span><span class="bv">39%</span></div>
+      <div class="track"><span class="fill fill-mute" style="width:38.9%"></span></div>
+    </li>
+    <li>
+      <div class="bl"><span>Legacy code and technical debt</span><span class="bv">38%</span></div>
+      <div class="track"><span class="fill fill-mute" style="width:37.9%"></span></div>
+    </li>
+    <li>
+      <div class="bl"><span>Slow or unreliable dev tools</span><span class="bv">26%</span></div>
+      <div class="track"><span class="fill fill-mute" style="width:25.7%"></span></div>
+    </li>
+  </ul>
+  <p class="note" style="border-top:none;padding-top:.9rem">Percentage placing each item in their top two. Shifting priorities and unclear requirements outranked legacy code and slow tooling. The friction people named most came from how work gets directed, not from the stack. Because everyone had to rank something first, these are relative to each other, and ranking one item top did not predict how happy or worn down someone felt.</p>
+
+  <h2>Why people skip well-being programs</h2>
+  <p class="sub">Not because they doubt them. Because there is no time.</p>
+
+  <ol class="ranked">
+    <li>Not enough time, heavy workload <span class="val">3.9</span></li>
+    <li>No management or budget support <span class="val">3.4</span></li>
+    <li>Poor timing or inflexible scheduling <span class="val">3.3</span></li>
+    <li>Prefer to manage wellbeing independently <span class="val">3.3</span></li>
+    <li>Doubt about whether the program helps <span class="val">3.0</span></li>
+  </ol>
+  <p class="note" style="border-top:none;padding-top:.9rem">Average rating on a 1–7 scale, where 7 is a very great barrier. Skepticism came last.</p>
+
+  <h2>Where the week goes</h2>
+  <p class="stat">On an average week, respondents reported 39% of their time on maintenance and keeping things running, 35% on building new things, and 24% on non-technical work.</p>
+  <p>More than a third — 37% — reported spending six or more hours a week on manual tasks they believed could be automated. That estimate tracked with feeling worn down, and had no relationship at all with feeling good about work.</p>
+
+  <h2>What actually moved the needle</h2>
+  <p class="sub">Standardized effects from the final model. Bigger bar, bigger influence.</p>
+
+  <p class="panelhead">On feeling good about work</p>
+  <div class="h">
+    <div class="eff"><span class="lbl">Leadership support</span><span class="axis"><i class="p" style="width:43.6%"></i></span><span class="num">+.35</span></div>
+    <div class="eff"><span class="lbl">System feedback</span><span class="axis"><i class="p" style="width:35.4%"></i></span><span class="num">+.28</span></div>
+    <div class="eff"><span class="lbl">Autonomy</span><span class="axis"><i class="p" style="width:19.4%"></i></span><span class="num">+.16</span></div>
+    <div class="eff"><span class="lbl">Physical health</span><span class="axis"><i class="p" style="width:18.8%"></i></span><span class="num">+.15</span></div>
+    <div class="eff"><span class="lbl">Toil</span><span class="axis"><i class="n" style="width:16.0%"></i></span><span class="num">&#8722;.13</span></div>
+  </div>
+
+
+  <h2>What organizations offer, and what workers would choose</h2>
+  <p class="sub">Programs respondents' organizations run, against the single one they would pick as most impactful.</p>
+
+  <div class="pair"><div class="pl"><span>Flexible work structures</span><span class="pn">69% / 56%</span></div>
+    <div class="prow"><b>offered</b><span class="offered" style="width:68.9%"></span></div>
+    <div class="prow"><b>wanted</b><span class="wanted" style="width:56.3%"></span></div></div>
+
+  <p class="note" style="border-top:none;padding-top:1rem">Flexible working was the one thing both widely offered and widely wanted. Almost everything else showed a gap. Social and team-building events reached about half of respondents and were the top pick for three percent. Asked which single investment would most improve output quality, protected deep-work time and cleanup sprints together drew 39%.</p>
+
+  <h2>What this doesn't show</h2>
+  <p>Everyone answered at a single point in time, so these are patterns in how answers hang together, not evidence that one thing causes another. All measures are self-reported, including the performance and quality ratings. The sample was recruited from a single online panel and is not a probability sample of the technology workforce. Group differences were statistically reliable but small, accounting for between one and three percent of the variance in each outcome.</p>
+
+  <footer>
+    <p>Cherie A. Herrin, University of Central Florida.</p>
+    <p>Full methodology and results are reported in the author's doctoral dissertation: <a href="https://stars.library.ucf.edu/gradstudies_etd_2026/277/">Cultivating Workplace Happiness in Technology Workers</a>.</p>
+    <p>Suggested citation: Herrin, C. A. (2026). <em>Cultivating workplace happiness in technology workers</em> [Doctoral dissertation, University of Central Florida]. STARS. <a href="https://stars.library.ucf.edu/gradstudies_etd_2026/277/">https://stars.library.ucf.edu/gradstudies_etd_2026/277/</a></p>
+    <p>Questions or requests: [LinkedIn profile or contact form link].</p>
+  </footer>
+
+</main>
+</body>
+</html>
